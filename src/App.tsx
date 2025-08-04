@@ -9,9 +9,8 @@ import "react-tabs/style/react-tabs.css";
 
 function App() {
   return (
-    <div>
+    <div className="background">
       <div className="banner">
-        {" "}
         <img src={alert} /> Due to the size of dataset viewports, this website
         is best viewed on screens wider than 900px
       </div>
