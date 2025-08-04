@@ -90,6 +90,23 @@ a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .tableau {
+    zoom: 0.5;
+  }
+  .books {
+    zoom: 0.7;
+  }
+}
+@media (max-width: 800px) {
+
+ .tableau {
+    zoom: 0.4;
+  }
+  .books {
+    zoom: 0.6;
+  }
+}
 @media only screen and (max-width: 600px) {
   .bio {
     display: flex;
@@ -102,13 +119,20 @@ a:hover {
     width: 130px;
     height: 130px;
   }
+  .tableau {
+    zoom: 0.3;
+  }
+  .books {
+    zoom: 0.5;
+  }
+ 
 }
 
 .banner {
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+/* @media only screen and (max-width: 850px) {
   .banner {
     background-color: #f5b05b;
     display: flex;
@@ -125,4 +149,4 @@ a:hover {
       margin-right: 10px;
     }
   }
-}
+} */
