@@ -7,6 +7,7 @@ export function Birds() {
     src="https://public.tableau.com/views/magdelena_birds_2020_2025/BirdsofMagdalena"
     toolbar="hidden"
     hideTabs
+    device='desktop'
   />
   </div>
   );

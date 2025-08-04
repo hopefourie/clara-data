@@ -12,7 +12,7 @@ function App() {
     <div className="background">
       <div className="banner">
         <img src={alert} /> Due to the size of dataset viewports, this website
-        is best viewed on screens wider than 900px
+        is best viewed on desktop.
       </div>
       <main>
         <div className="bio">
