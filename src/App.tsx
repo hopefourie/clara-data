@@ -1,63 +1,41 @@
-import cn from 'classnames'
-
-import { useState } from "react";
 import "./App.css";
-import caret from "./assets/double-down-caret.png";
 import { Birds } from "./Birds";
 import { Books } from "./Books";
+import headshot from "./assets/headshot.png"
+
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 function App() {
-  const [isBirdsSelected, setIsBirdsSelected] = useState<boolean>(true);
-  const [isBooksSelected, setIsBooksSelected] = useState<boolean>(false);
-  const [isThirdSelected, setIsThirdSelected] = useState<boolean>(false);
-
   return (
     <main>
-      <div className="landing">
-        <h1>Clara Hughes</h1>
-        <img aria-hidden src={caret} alt="caret icon" className="caret-icon" />
-        <div className="button-container">
-        <div
-          className={cn("project", isBirdsSelected && "selected")}
-          onClick={() => {
-            setIsBirdsSelected(true);
-            setIsBooksSelected(false);
-            setIsThirdSelected(false);
-          }}
-        >
-          Birds of Magdelena
-          {/* test */}
-        </div>
-        <div
-          className={cn("project", isBooksSelected && "selected")}
-          onClick={() => {
-            setIsBooksSelected(true);
-            setIsThirdSelected(false);
-            setIsBirdsSelected(false);
-          }}
-        >
-          Dont Judge a Book
-        </div>
-        <div
-          className={cn("project", isThirdSelected && "selected")}
-          onClick={() => {
-            setIsThirdSelected(true);
-            setIsBooksSelected(false);
-            setIsBirdsSelected(false);
-          }}
-        >
-          A Third Thing
-        </div>
+      <div className="bio">
+        <img className="headshot" src={headshot}/>
+        <p>
+          Hi! I'm Clara Hughes, a data analyst based in Richmond, VA. I am
+          interested in the intersection of data and social sciences. <br/><br/>  I am
+          currently seeking new opportunities. Checkout my{" "}
+          <a href="https://github.com/clarameera">github</a> and{" "}
+          <a href="">linkedin</a>.
+        </p>
       </div>
-      </div>
+      <Tabs className="tabs">
+        <TabList>
+          <Tab>Birds of Magdelena</Tab>
+          <Tab>Books on Data</Tab>
+        </TabList>
+
+        <TabPanel>
+           <Birds />
+        </TabPanel>
+        <TabPanel>
+          <Books />
+        </TabPanel>
+      </Tabs>
+
+     
+
       
-      <div className={!isBirdsSelected ? "hidden" : ""}>
-        <Birds />
-      </div>
-      <div className={!isBooksSelected ? "hidden" : ""}>
-        <Books />
-      </div>
-      <div className={!isThirdSelected ? "hidden" : ""}>Placeholder</div>
     </main>
   );
 }
