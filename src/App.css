@@ -12,6 +12,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  background-color: black;
 }
 
 .caret-icon {
@@ -29,8 +30,8 @@ body {
     background-position: 50% 100%;
     background-color: #00564d;
     color: white;
-    height: 10vh;
-    font-size: 1em;
+    height: 80px;
+    font-size: 0.75em;
   }
 }
 
@@ -50,7 +51,7 @@ main {
 }
 
 .landing {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   text-align: center;
   position: fixed;
@@ -58,9 +59,8 @@ main {
 
   animation: sticky-parallax-header-move-and-size linear forwards;
   animation-timeline: scroll();
-  animation-range: 0vh 90vh;
+  animation-range: 0vh (100vh-80px);
 }
-
 
 @keyframes caret-icon-disappear {
   from {
@@ -73,10 +73,10 @@ main {
   }
 }
 
-.caret-icon{
+.caret-icon {
   animation: caret-icon-disappear linear forwards;
   animation-timeline: scroll();
-  animation-range: 0vh 90vh;
+  animation-range: 0vh (100vh-80px);
 }
 
 body {
@@ -84,10 +84,50 @@ body {
 }
 
 .tableau {
- zoom:.75;
+  zoom: 0.75;
 }
 
 .placeholder {
   height: 1000px;
   width: 1000px;
+}
+
+@keyframes buttons-appear {
+  from {
+   opacity: 0%;
+  }
+  to {
+   opacity: 100%;
+  }
+}
+
+.button-container {
+  display: flex;
+  
+}
+
+.project {
+  background-color: transparent;
+  border-radius: 0%;
+  animation: buttons-appear linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0vh (100vh-80px);
+  margin: 6px 10px 0px 10px;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 3px solid white;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,6 +1,6 @@
-# Slug Club
+# Clara Data
 
-This repository powers Slug Club RVA.
+This repository powers Clara's data portfolio.
 
 ## Steps to Run Locally
 

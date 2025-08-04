@@ -1,7 +1,8 @@
 {
-  "name": "slug-club",
+  "name": "clara-data",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://hopefourie.github.io/clara-data/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@tableau/embedding-api-react": "^3.13.1",
+    "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
