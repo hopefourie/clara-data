@@ -26,6 +26,7 @@ function App() {
           }}
         >
           Birds of Magdelena
+          {/* test */}
         </div>
         <div
           className={cn("project", isBooksSelected && "selected")}
