@@ -14,14 +14,14 @@ body {
   font-variation-settings: "wdth" 100;
   background-color: white;
   color: black;
-  display: flex;
-  align-items: flex-start;
 }
 
 main {
   margin: 10vh 10vw;
   display: flex;
   align-items: flex-start;
+    background-color: white;
+
 }
 
 .tableau {
@@ -32,6 +32,7 @@ main {
 
 .bio {
   margin-right: 20px;
+  max-width: 230px;
 }
 
 .headshot {
@@ -42,4 +43,21 @@ main {
 
 .tabs {
     width: 830px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+  margin: 10vh 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0px;
+  max-width: 230px;
+}
+
 }
