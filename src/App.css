@@ -1,0 +1,93 @@
+#root {
+  margin: 0 auto;
+}
+
+html,
+body {
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.caret-icon {
+  height: 100px;
+  filter: invert(1);
+}
+
+@keyframes sticky-parallax-header-move-and-size {
+  from {
+    background-position: 50% 0;
+    height: 100vh;
+    font-size: 2em;
+  }
+  to {
+    background-position: 50% 100%;
+    background-color: #00564d;
+    color: white;
+    height: 10vh;
+    font-size: 1em;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: fixed;
+  top: 0;
+
+  animation: sticky-parallax-header-move-and-size linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+}
+
+
+@keyframes caret-icon-disappear {
+  from {
+    background-position: 50% 0;
+    height: 100px;
+  }
+  to {
+    background-position: 50% 100%;
+    height: 0px;
+  }
+}
+
+.caret-icon{
+  animation: caret-icon-disappear linear forwards;
+  animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+}
+
+body {
+  padding-top: 100vh;
+}
+
+.tableau {
+ zoom:.75;
+}
+
+.placeholder {
+  height: 1000px;
+  width: 1000px;
+}
