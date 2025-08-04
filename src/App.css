@@ -4,9 +4,6 @@
 
 html,
 body {
-  /* @media (prefers-color-scheme: light) {
-    color-scheme: light;
-  } */
   font-family: "Mozilla Headline", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -14,25 +11,43 @@ body {
   font-variation-settings: "wdth" 100;
   background-color: white;
   color: black;
+  display: flex;
+  align-items: flex-start;
+  min-width: 1000px;
 }
 
 main {
   margin: 10vh 10vw;
   display: flex;
   align-items: flex-start;
-    background-color: white;
-
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
 }
 
 .tableau {
   zoom: 0.6;
-    width: 1366px
-
+  width: 1366px;
+  border-radius: 5%;
 }
+
+a {
+  color: #F7EEE3;
+  text-decoration: underline;
+ 
+}
+
+ a:hover {
+    color: #f5b05b;
+  }
 
 .bio {
   margin-right: 20px;
-  max-width: 230px;
+  width: 230px;
+  background-color: #2A5782;
+  color: #F7EEE3;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .headshot {
@@ -42,22 +57,42 @@ main {
 }
 
 .tabs {
-    width: 830px;
+  width: 830px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .bio {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    width: unset;
+    max-width: 500px;
+    margin-bottom: 10px;
+
+  }
+  .headshot {
+    margin-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   main {
-  margin: 10vh 10vw;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    margin: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-.bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 0px;
-  max-width: 230px;
-}
-
+  .bio {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    width: unset;
+margin-bottom: 20px;
+    max-width: 300px;
+  }
 }
