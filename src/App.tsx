@@ -17,7 +17,7 @@ function App() {
           <div>
             <h1>Clara Hughes</h1>
           <p>
-            I'm a data analyst based in Richmond, VA. I am
+            I am a data analyst based in Richmond, VA. I am
             interested in the intersection of data and social sciences. <br />
             <br /> I am currently seeking new opportunities. Checkout my{" "}
             <a href="https://github.com/clarameera">github</a> and{" "}
