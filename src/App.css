@@ -15,144 +15,95 @@ body {
   align-items: flex-start;
   width: 100%;
 }
-.background {
-  width: 100%;
-  background-color: #f5b05b;
-}
 main {
-  position: relative;
-  max-width: 1100px;
-  padding: 5vw 5vw;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  background-color: white;
-  display: flex;
-  align-items: flex-start;
+  width: 100%;
 }
 
-.tableau {
-  zoom: 0.6;
-  width: 1366px;
-  border-radius: 5%;
+.container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
   color: #f7eee3;
-  text-decoration: underline;
 }
 
 a:hover {
   color: #f5b05b;
 }
 
+p {
+  margin: 0;
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #2a5782;
+  }
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
 .bio {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 760px;
+}
+
+.headshot {
+  border-radius: 50%;
   margin-right: 20px;
-  min-width: 250px;
-  max-width: 250px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.project_container {
+  display: flex;
+}
+
+.project {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #2a5782;
   color: #f7eee3;
   border-radius: 10px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
-.headshot {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+.project_img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 254px;
 }
 
-@media (max-width: 1200px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  .bio {
-    display: flex;
-    flex-direction: row;
-    margin-right: 0px;
-    width: 80vw;
-    max-width: 760px;
-    margin-bottom: 10px;
-  }
-  .headshot {
-    margin-right: 20px;
-    width: 130px;
-    height: 130px;
-  }
-}
-
-@media (max-width: 900px) {
-  .tableau {
-    zoom: 0.5;
-  }
-  .books {
-    zoom: 0.7;
-  }
-}
 @media (max-width: 800px) {
-
- .tableau {
-    zoom: 0.4;
+  .container {
+    margin: 10px auto;
   }
-  .books {
-    zoom: 0.6;
+  h1 {
+    text-align: center;
   }
-}
-@media only screen and (max-width: 600px) {
   .bio {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
   }
-  .headshot {
-    margin-right: unset;
-    width: 130px;
-    height: 130px;
-  }
-  .tableau {
-    zoom: 0.3;
-  }
-  .books {
-    zoom: 0.5;
-  }
- 
-}
-
-@media (max-width: 500px) {
-
- .tableau {
-    zoom: 0.25;
-  }
-  .books {
-    zoom: 0.45;
-  }
-}
-
-.banner {
-  display: none;
-}
-
-@media only screen and (max-width: 500px) {
-  .banner {
-    background-color: #f5b05b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    position: sticky;
-    width: 100vw;
-
-    img {
-      height: 20px;
-      width: 20px;
-      margin-right: 10px;
-    }
+  .project_container {
+    flex-direction: column;
   }
 }
