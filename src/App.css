@@ -89,7 +89,6 @@ h2 {
 .project_img {
   width: 100%;
   margin: 0 auto;
-  max-width: 254px;
 }
 
 @media (max-width: 800px) {
