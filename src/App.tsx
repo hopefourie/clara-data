@@ -19,7 +19,7 @@ function App() {
               intersection of data and social sciences. <br />
               <br /> I am currently seeking new opportunities. Checkout my{" "}
               <a href="https://github.com/clarameera">github</a> and{" "}
-              <a href="">linkedin</a>.
+              <a href="https://www.linkedin.com/in/clara-hughes-201657157/">linkedin</a>.
             </p>
           </div>
         </div>
